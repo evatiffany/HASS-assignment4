@@ -1,0 +1,156 @@
+/* stylesheet for Assignment 4 */
+
+#map {
+    width: 90vw;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(22, 22, 43);
+}
+
+p {
+    font-family: 'Nunito', 'sans-serif';
+    font-weight:300;
+    font-size:18px;
+    text-align: center;
+    margin: auto;
+}
+
+b {
+    color:rgb(68, 68, 108);
+}
+
+i {
+    color:cadetblue; 
+    font-size:16px;
+}
+
+a{
+    color: #333399;
+  }
+
+a:hover{
+    color: #FF0099;
+  }
+
+.tooltip {
+    font-family: 'Nunito', 'sans-serif';
+    font-weight:700;
+    color: rgb(24, 24, 24);
+    position:absolute;
+    background-color: rgba(255,255,255, 0.9); 
+    width: 240px;
+    height: auto;
+    text-align:center;
+    margin-top:25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: +15; 
+}
+
+path:hover {
+    stroke:#f7f7f7;
+    opacity: 0.75;
+  }
+
+#totLegend, #maleLegend, #femLegend {  
+    position: absolute;
+    font-size: 15px; 
+    font-family: 'Nunito',sans-serif;
+    line-height: 1.25;  
+    width: auto;
+    height: 300px;
+    margin-left: 80%;
+    margin-top:-35%;
+    z-index:1000;
+    text-align:center;
+    padding-top:23px;
+    font-weight:bolder;
+    text-shadow: -1px 1px 0 #000,
+	1px 1px 0 #000,
+	1px -1px 0 #000,
+	-1px -1px 0 #000;
+}
+
+#bgLegend {
+    position:absolute;
+    background-color: rgba(000,000,000, 0.7);
+    font-family: 'Nunito',sans-serif;
+    width: 18%;
+    height: 26%;
+    margin-left: 80%;
+    margin-top:-32%;
+    z-index:1000;
+    color:white;
+    text-align:center;
+    padding-top:10px;
+    font-size:20px;
+}
+
+button {
+    font-family: 'Nunito',sans-serif;
+    font-weight:700;
+    font-size: 15px;
+    background-color: white; 
+    border: none;
+    border-radius:25px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
+.femButton {
+    background-color: white; 
+    color: #e6571a; 
+    border: 2px solid #e6571a;
+}
+  
+.femButton:hover {
+    background-color: #e6571a;
+    color: white;
+}
+  
+.maleButton {
+    background-color: white; 
+    color: #5250d7; 
+    border: 2px solid #5250d7;
+}
+  
+.maleButton:hover {
+    background-color: #5250d7;
+    color: white;
+}
+  
+.totButton {
+    background-color: white; 
+    color: #013913; 
+    border: 2px solid #013913;
+}
+  
+.totButton:hover {
+    background-color: #013913;
+    color: white;
+}
+
+.district {
+    stroke-width: 1.5px;
+    z-index: 1000;
+}
+
+.boundBox {
+    width: 700px;
+    background-color:white;
+    border:2px solid rgb(29, 29, 29);
+    /* padding: auto; */
+    margin:auto;
+}
